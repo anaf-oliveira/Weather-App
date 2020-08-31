@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
