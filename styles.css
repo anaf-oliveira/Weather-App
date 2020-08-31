@@ -9,13 +9,13 @@
   border-radius: 5px;
 }
 
-.collumn-1 {
+.col-md-8 {
   border: 1px solid #dadde1;
   color: red;
   border-radius: 5px;
 }
 
-.collumn-2 {
+.col-md-4 {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
