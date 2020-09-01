@@ -11,7 +11,7 @@
 }
 
 .title {
-  font-size: 50px;
+  font-size: 40px;
   align-content: center;
   font-weight: 700;
   color: #393b44;
@@ -58,11 +58,10 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-
   color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 25px;
 }
 
 li:first-letter {
@@ -70,11 +69,23 @@ li:first-letter {
 }
 
 .current-title {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 400;
   align-content: center;
 }
 
 .forecast-title {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 400;
   align-content: center;
+}
+
+#city-name {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#min-max-temp {
+  font-size: 40px;
+  font-weight: normal;
 }
