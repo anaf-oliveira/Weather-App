@@ -1,86 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Weather App</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-  <body>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
 
-      <div class="container">
-      
-        <div class="wrapper">
-            <div class="app">
-                <h1>The Weather App</h1>
-        <div class="row">
-          <div class="col-md-8">
-            CURRENT
-            <div class="row">
-              <div class="col-md-6">Vila Nova de Gaia</div>
-              <div class="col-md-6">↓18º ↑25º</div>
+<body>
+  <title>The Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+</body>
+<div class="container">
+  <div class="wrapper">
+    <div class="app">
+
+      <h1>The Weather App</h1>
+
+      <div class="col">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class=".col-md-6">
+              <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                autocomplete="off" />
+            </div>
+            <div class=".col-md-3">
+              <input type="submit" value="Search" class="btn btn-primary w-100" />
+            </div>
+            <div class=".col-md-3">
+              <input type="submit" value="Current" class="btn btn-primary w-100" />
+            </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          CURRENT
+          <div class="row">
+            <div class="col-md-6">Porto</div>
+            <div class="col-md-6">↓18º ↑25º</div>
             <div class="col-md-6">
-                <ul>
+              <ul>
                 <li>
-                   Saturday
-                </li>
-                    <li>
-                    Partly cloudy
+                  Saturday
                 </li>
                 <li>
-                    Humidity xx%
+                  Partly cloudy
                 </li>
                 <li>
-                    Wind xx km/h
+                  Humidity xx%
                 </li>
                 <li>
-                    Last updated 12:15
+                  Wind xx km/h
                 </li>
-            </ul>
-            <div class="col">
-            <div class="col-md-6"><img src="/media/dom.png" alt="sunny" width="24" height="39" /><p>22º <button>C</button>| <button>F</button></p></div>
-          </div>
-          <div class="col">
-            <form id="search-form" class="mb-3">
-                <div class="row">
-                    <div class=".col-md-6">
-                        <input type="search" placeholder="Type a city.." class="form-control" id="city-input" autocomplete="off" />
-                    </div>
-                    <div class=".col-md-3">
-                        <input type="submit" value="Search" class="btn btn-primary w-100" />
-                    </div>
-                    <div class=".col-md-3">
-                        <input type="submit" value="Current" class="btn btn-primary w-100" />
-                    </div>      
+                <li>
+                  Last updated 12:15
+                </li>
+              </ul>
             </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-4">Forecast
-            <div class="row">
-                <div class="col-md-6">🌞</div>
-                <div class="col-md-6">↓18º ↑25º</div>
-                <div class="col-md-6">🌤</div>
-                <div class="col-md-6">↓18º ↑25º</div>
-                <div class="col-md-6">🌤</div>
-                <div class="col-md-6">↓18º ↑25º</div>
-                <div class="col-md-6">⛈</div>
-                <div class="col-md-6">↓18º ↑25º</div>
-                <div class="col-md-6">🌤</div>
-                <div class="col-md-6">↓18º ↑25º</div>
-            </div>
+            <div class="col-md-6"><img src="/media/dom.png" alt="sunny" width="24" height="39" />22º<button>C</button>|
+              <button>F</button>
             </div>
           </div>
         </div>
+        <div class="col-md-4">FORECAST
+
+          <div class="col-md-6">🌞</div>
+          <div class="col-md-6">↓18º ↑25º</div>
+          <div class="col-md-6">🌤</div>
+          <div class="col-md-6">↓18º ↑25º</div>
+          <div class="col-md-6">🌤</div>
+          <div class="col-md-6">↓18º ↑25º</div>
+          <div class="col-md-6">⛈</div>
+          <div class="col-md-6">↓18º ↑25º</div>
+          <div class="col-md-6">🌤</div>
+          <div class="col-md-6">↓18º ↑25º</div>
+        </div>
+
       </div>
-</div>
     </div>
-  </body>
+
+    <h5>Open source code by <strong>Ana F. Oliveira</strong></h5>
+
+  </div>
+</div>
+</div>
+
 </html>
