@@ -2,7 +2,7 @@
 
 function currentDate() {
   let currentDateTime = new Date();
-  let h3 = document.querySelector("h3");
+  let todayElement = document.querySelector("#today");
 
   let days = [
     "Sunday",
@@ -19,7 +19,7 @@ function currentDate() {
   let hours = currentDateTime.getHours();
   let minutes = currentDateTime.getMinutes();
 
-  h3.innerHTML = `${day} ${hours}:${minutes}`;
+  todayElement.innerHTML = `${day} ${hours}:${minutes}`;
   if (minutes <= 9) {
     minutes = `0${minutes}`;
   }
@@ -30,6 +30,7 @@ currentDate();
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  3;
   let temperature = temperatureElement.innerHTML;
   temperature = Number(temperature);
   temperatureElement.innerHTML = (temperature * 9) / 5 + 32;
@@ -52,8 +53,8 @@ celsius.addEventListener("click", convertToCelsius);
 
 function searchCity(event) {
   event.preventDefault();
-  let inputValue = document.querySelector("#city-search");
-  let city = document.querySelector("h1");
+  let inputValue = document.querySelector("#city-input");
+  let city = document.querySelector("h2");
   if (inputValue.value) {
     city.innerHTML = `${inputValue.value}`;
   } else {
@@ -107,7 +108,7 @@ function giveLocation(response) {
   let roundTemp = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#temperature");
   currentTemp.innerHTML = `${roundTemp}°C`;
-  let cityElement = document.querySelector("#city-value");
+  let cityElement = document.querySelector("#city-name");
   cityElement.innerHTML = response.data.name;
 }
 let currentButton = document.querySelector("#current-btn");

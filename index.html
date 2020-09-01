@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>The Weather App</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -38,27 +39,24 @@
 <!-- /. left collumn -->
       
 <div class="row">
-  <div class="col-sm-8"><span class="city-name">PORTO</span><p id="coutry-name">Portugal</p></div>
+  <div class="col-sm-8"><h2 class="city-name">PORTO</h2><p id="coutry-name">Portugal</p><p>Last updated - <span id="today"> 1 september 2020</span></p></div>
   <div class="col-sm-4"></div>
 </div>
 <div class="row">
-  <div class="col-sm"><img src="/media/dom.png" alt="sunny" max width="50" /><p></p><span id="min-max-temp">↓18º ↑25º</span><p></p><a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a></p></div>
-  <div class="col-sm"><p><span class="description">What's to know?</span></p>
+  <div class="col-sm"><img src="/media/dom.png" alt="sunny" max width="50" /><p></p><span id="temperature">18º </span><p></p><a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a></p></div>
+  <div class="col-sm"><p><span class="extra-info">What's to know?</span></p>
     <ul>
     <li>
-      Saturday
+      <span class="specifics-values" id="min-temp">↓18º</span> <span class="specifics-values" id="max-temp">↑25º</span>
     </li>
     <li>
-      Partly cloudy
+      <span class="specifics-values" id="description">Partly cloudy</span>
     </li>
     <li>
-      Humidity xx%
+    <span class="specifics-values">Humidity -</span><span class="specifics-values" id="humidity"> 71%</span>
     </li>
     <li>
-      Wind xx km/h
-    </li>
-    <li>
-      Last updated 12:15
+    <span class="specifics-values"> Wind -</span><span class="specifics-values" id="wind"> 13km/h</span>
     </li>
   </ul></div>
   <div class="col-sm" id="forecast"><span class="forecast-title">Forecast</span>
@@ -84,8 +82,10 @@
 
     <!-- /. wrap up -->
   </div>
+  </div>
   <small class="copyright">Open source code by <strong>Ana F. Oliveira</strong></small>
+
 </div>
-</div>
+  <script src="src/index.js"></script>
 </body>
 </html>

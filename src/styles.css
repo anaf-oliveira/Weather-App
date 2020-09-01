@@ -6,15 +6,15 @@
 .app {
   padding: 20px;
   box-shadow: rgb(135, 135, 135);
-  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
   border-radius: 25px;
+  border: 3px solid #37ecba;
 }
 
 .title {
   font-size: 40px;
   align-content: center;
   font-weight: 700;
-  color: #ffffff;
+  color: #37ecba;
 }
 
 #city-input {
@@ -71,7 +71,7 @@ li:first-letter {
 .city-name {
   font-size: 40px;
   font-weight: 700;
-  color: #ffffff;
+  color: #37ecba;
 }
 
 .forecast-title {
@@ -103,4 +103,8 @@ li:first-letter {
   font-style: italic;
   text-align: center;
   line-height: 20px;
+}
+
+.specifics-values {
+  color: #37ecba;
 }
