@@ -5,16 +5,16 @@
 
 .app {
   padding: 20px;
-  border: 1px solid #c9d6ff;
-  border-radius: 15px;
   box-shadow: rgb(135, 135, 135);
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  border-radius: 25px;
 }
 
 .title {
   font-size: 40px;
   align-content: center;
   font-weight: 700;
-  color: #393b44;
+  color: #ffffff;
 }
 
 #city-input {
@@ -58,7 +58,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
+  color: #ffffff;
   font-size: 16px;
   font-weight: 100;
   line-height: 25px;
@@ -72,20 +72,24 @@ li:first-letter {
   font-size: 20px;
   font-weight: 400;
   align-content: center;
+  color: #ffffff;
 }
 
 .forecast-title {
   font-size: 20px;
   font-weight: 400;
   align-content: center;
+  color: #ffffff;
 }
 
 #city-name {
   font-size: 20px;
   font-weight: normal;
+  color: #ffffff;
 }
 
 #min-max-temp {
   font-size: 40px;
   font-weight: normal;
+  color: #ffffff;
 }
