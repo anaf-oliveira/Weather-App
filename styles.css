@@ -9,13 +9,29 @@
   border-radius: 5px;
 }
 
-.col-md-8 {
-  border: 1px solid #dadde1;
-  color: red;
-  border-radius: 5px;
+#search-button {
+  max-width: 100px;
 }
 
-.col-md-4 {
-  border: 1px solid #dadde1;
-  border-radius: 5px;
+#current-button {
+  max-width: 100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
