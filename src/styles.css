@@ -5,6 +5,76 @@
 
 .app {
   padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
+  border: 1px solid #c9d6ff;
+  border-radius: 15px;
+  box-shadow: rgb(135, 135, 135);
+}
+
+.title {
+  font-size: 50px;
+  align-content: center;
+  font-weight: 700;
+  color: #393b44;
+}
+
+#city-input {
+  width: 100%;
+}
+
+#search-button {
+  margin-left: 5px;
+  background-color: #c9d6ff;
+  border: 1px solid #c9d6ff;
+  color: #ffffff;
+}
+
+#search-button:hover {
+  margin-left: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #c9d6ff;
+}
+
+#current-button {
+  margin-left: 10px;
+  background-color: #c9d6ff;
+  border: 1px solid #c9d6ff;
+  color: #ffffff;
+}
+
+#current-button:hover {
+  margin-left: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #c9d6ff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.current-title {
+  font-size: 30px;
+  align-content: center;
+}
+
+.forecast-title {
+  font-size: 30px;
+  align-content: center;
 }
