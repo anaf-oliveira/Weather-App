@@ -68,21 +68,25 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.current-title {
-  font-size: 20px;
-  font-weight: 400;
-  align-content: center;
+.city-name {
+  font-size: 40px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .forecast-title {
   font-size: 20px;
   font-weight: 400;
-  align-content: center;
   color: #ffffff;
 }
 
-#city-name {
+#forecast {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  text-align: center;
+}
+
+#country-name {
   font-size: 20px;
   font-weight: normal;
   color: #ffffff;
@@ -92,4 +96,11 @@ li:first-letter {
   font-size: 40px;
   font-weight: normal;
   color: #ffffff;
+}
+
+.copyright {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  line-height: 20px;
 }
