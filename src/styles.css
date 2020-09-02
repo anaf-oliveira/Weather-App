@@ -6,15 +6,21 @@
 .app {
   padding: 20px;
   box-shadow: rgb(135, 135, 135);
+  background-image: #ffffff;
   border-radius: 25px;
   border: 3px solid #37ecba;
 }
 
 .title {
   font-size: 40px;
-  align-content: center;
   font-weight: 700;
   color: #37ecba;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#search-form {
+  padding-right: 20px;
 }
 
 #city-input {
@@ -80,7 +86,7 @@ li:first-letter {
   color: #ffffff;
 }
 
-#forecast {
+.forecast {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
   text-align: center;
