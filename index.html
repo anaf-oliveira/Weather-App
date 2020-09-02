@@ -25,10 +25,10 @@
             <h1 class="title">The Weather App</h1>
             <form class="form-inline" id="search-form">
                 <label class="sr-only" for="inlineFormInputName2">City name</label>
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                <input type="text" class="form-control mb-2 mr-sm-2" id="city-search"
                     placeholder="Please, type a city name.">
-                <button type="submit" class="btn btn-primary mb-2" id="current-button">Current</button>
-                <button type="submit" class="btn btn-primary mb-2" id="search-button">Search</button>
+                    <a href="#" class="btn btn-primary" id="current-button">Current</a>
+                    <a href="#" class="btn btn-primary" id="search-button">Search</a>
             </form>
         </div>
     </div>
@@ -90,7 +90,7 @@
             <div id="current-weather-description">
             <h4 class="today-title">Today</h4>
             <img src="/media/dom.png" alt="sunny" max width="50" />
-            <h3 class="city-name">Porto</h3>
+            <h2 class="city-name">Porto</h2>
             <p id="country-name">Portugal</p>
             <p id="temperature"><strong>25º</strong></p><a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a><p></p>
             <p></p><span id="last-updated">Last updated - </span><span id="today"> 1 september 2020</span></p>
@@ -105,10 +105,10 @@
                     <span class="specifics-values" id="description">Partly cloudy</span>
                 </li>
                 <li>
-                    <span class="specifics-values" id="humidity">Humidity -</span><span class="specifics-values" id="humidity"> 71%</span>
+                    <span class="specifics-values">Humidity -</span><span class="specifics-values" id="humidity"> 71%</span>
                 </li>
                 <li>
-                    <span class="specifics-values" id="wind"> Wind -</span><span class="specifics-values" id="wind"> 13km/h</span>
+                    <span class="specifics-values"> Wind -</span><span class="specifics-values" id="wind"> 13km/h</span>
                 </li>
             </ul>
 </div>
