@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>The Weather App</title>
+    <script src="https://kit.fontawesome.com/9fe35a0b01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <link rel="stylesheet" href="src/styles.css" />
@@ -22,7 +23,7 @@
         <div class="col-md-11">
             <!-- /. title and search engine -->
             <h1 class="title">The Weather App</h1>
-            <form class="form-inline">
+            <form class="form-inline" id="search-form">
                 <label class="sr-only" for="inlineFormInputName2">City name</label>
                 <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
                     placeholder="Please, type a city name.">
@@ -91,7 +92,7 @@
             <img src="/media/dom.png" alt="sunny" max width="50" />
             <h3 class="city-name">Porto</h3>
             <p id="country-name">Portugal</p>
-            <p id="current-temp"><strong>25º</strong></p>
+            <p id="temperature"><strong>25º</strong></p><a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a><p></p>
             <p></p><span id="last-updated">Last updated - </span><span id="today"> 1 september 2020</span></p>
             <p></p>
             <span class="extra-info">What's to know?</span></p>
@@ -104,10 +105,10 @@
                     <span class="specifics-values" id="description">Partly cloudy</span>
                 </li>
                 <li>
-                    <span class="specifics-values">Humidity -</span><span class="specifics-values" id="humidity"> 71%</span>
+                    <span class="specifics-values" id="humidity">Humidity -</span><span class="specifics-values" id="humidity"> 71%</span>
                 </li>
                 <li>
-                    <span class="specifics-values"> Wind -</span><span class="specifics-values" id="wind"> 13km/h</span>
+                    <span class="specifics-values" id="wind"> Wind -</span><span class="specifics-values" id="wind"> 13km/h</span>
                 </li>
             </ul>
 </div>

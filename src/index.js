@@ -30,7 +30,6 @@ currentDate();
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  3;
   let temperature = temperatureElement.innerHTML;
   temperature = Number(temperature);
   temperatureElement.innerHTML = (temperature * 9) / 5 + 32;
@@ -43,7 +42,7 @@ function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   let temperature = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = "18º";
+  temperatureElement.innerHTML = "25º";
 }
 
 let celsius = document.querySelector("#buttonCelsius");
@@ -110,6 +109,8 @@ function giveLocation(response) {
   currentTemp.innerHTML = `${roundTemp}°C`;
   let cityElement = document.querySelector("#city-name");
   cityElement.innerHTML = response.data.name;
+  let countryElement = document.getElementById("#country-name");
+  countryElement.innerHTML = response.data.name;
 }
-let currentButton = document.querySelector("#current-btn");
+let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", handlePosition);
