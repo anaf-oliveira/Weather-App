@@ -6,7 +6,7 @@
 .app {
   position: relative;
   z-index: 9;
-  background: #2d4059;
+  background: #056676;
   max-width: 900px;
   border-radius: 25px 20px 20px 25px;
   padding: 20px 20px 20px 20px;
@@ -27,9 +27,9 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  color: #37ecba;
+  color: #056676;
   padding-top: 20px;
   padding-right: 20px;
 }
@@ -44,30 +44,58 @@
 
 #search-button {
   margin-left: 5px;
-  background-color: #c9d6ff;
-  border: 1px solid #c9d6ff;
+  padding-right: 10px;
+  width: 100px;
+  background-color: #5eaaa8;
+  border: none;
   color: #ffffff;
 }
 
 #search-button:hover {
-  margin-left: 5px;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
-  color: #c9d6ff;
+  border: 1px solid #5eaaa8;
+  color: #5eaaa8;
 }
 
 #current-button {
   margin-left: 10px;
-  background-color: #c9d6ff;
-  border: 1px solid #c9d6ff;
+  padding-right: 10px;
+  width: 100px;
+  background-color: #5eaaa8;
+  border: none;
   color: #ffffff;
 }
 
 #current-button:hover {
-  margin-left: 10px;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
-  color: #c9d6ff;
+  border: 1px solid #5eaaa8;
+  color: #5eaaa8;
+}
+
+.left-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #5eaaa8;
+  padding-top: 10px;
+}
+
+.row1 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.weekday {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+table {
+  text-align: center;
+}
+td {
+  font-size: 14px;
+  font-weight: normal;
 }
 
 ul {
@@ -80,9 +108,6 @@ li {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 25px;
 }
 
 li:first-letter {
@@ -116,13 +141,13 @@ li:first-letter {
 }
 
 #last-updated {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 100px;
   color: #ffffff;
 }
 
 #today {
-  font-size: 12px;
+  font-size: 10px;
   color: #ffffff;
 }
 
@@ -144,9 +169,14 @@ li:first-letter {
   text-align: center;
 }
 
-.current-weather-description {
-  position: relative;
-  text-align: center;
+#box {
+  color: white;
+  background: #ffbd17;
+  width: 400px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {

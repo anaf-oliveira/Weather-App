@@ -26,62 +26,67 @@
                 <label class="sr-only" for="inlineFormInputName2">City name</label>
                 <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
                     placeholder="Please, type a city name.">
-                <button type="submit" class="btn btn-primary mb-2">Current</button>
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                <button type="submit" class="btn btn-primary mb-2" id="current-button">Current</button>
+                <button type="submit" class="btn btn-primary mb-2" id="search-button">Search</button>
             </form>
         </div>
     </div>
     <div class="row">
         <!-- /. left collumn -->
         <div class="col-md-7">
-            <h3>This week's Forecast</h3>
-      
-            <table class="table">
+        <p></p>
+        <p></p>
+            <h3 class="left-title">This week's Forecast</h3>
+        </br>
+
+            <div class="table-responsive-sm">
+            <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">Weekday</th>
-                        <th scope="col"></th>
-                        <th scope="col">Min</th>
-                        <th scope="col">Max</th>
+                        <th scope="col" class="row1">Weekday</th>
+                        <th scope="col" class="row1">Forecast</th>
+                        <th scope="col" class="row1">↓ Min</th>
+                        <th scope="col" class="row1">↑ Max</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Sun</th>
+                        <th scope="row" class="weekday">Sun</th>
                         <td>🌤</td>
-                        <td>↓18º</td>
-                        <td>↑25º</td>
+                        <td>18º</td>
+                        <td>25º</td>
                     </tr>
                 <tr>
-                    <th scope="row">Mon</th>
+                    <th scope="row" class="weekday">Mon</th>
                     <td>🌤</td>
-                    <td>↓18º</td>
-                    <td>↑25º</td>
+                    <td>18º</td>
+                    <td>25º</td>
                 </tr>
                     <tr>
-                        <th scope="row">Tue</th>
+                        <th scope="row" class="weekday">Tue</th>
                         <td>🌤</td>
-                        <td>↓18º</td>
-                        <td>↑25º</td>
+                        <td>18º</td>
+                        <td>25º</td>
                     </tr>
                     <tr>
-                        <th scope="row">Wed</th>
+                        <th scope="row" class="weekday">Wed</th>
                         <td>🌤</td>
-                        <td>↓18º</td>
-                        <td>↑25º</td>
+                        <td>18º</td>
+                        <td>25º</td>
                     </tr>
                     <tr>
-                        <th scope="row">Thu</th>
+                        <th scope="row" class="weekday">Thu</th>
                         <td>🌤</td>
-                        <td>↓18º</td>
-                        <td>↑25º</td>
+                        <td>18º</td>
+                        <td>25º</td>
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
         <!-- /. right collumn -->
         <div class="col-md-4">
-            <div class="current-weather-description">
+            <div id="current-weather-description">
             <h4 class="today-title">Today</h4>
             <img src="/media/dom.png" alt="sunny" max width="50" />
             <h3 class="city-name">Porto</h3>
@@ -107,10 +112,10 @@
             </ul>
 </div>
         </div>
-    </div>
 
 
 <!-- /. wrap-up -->
+</div>
 </div>
 <footer>
     <small class="copyright">Open source code by <strong>Ana F. Oliveira</strong></small>
