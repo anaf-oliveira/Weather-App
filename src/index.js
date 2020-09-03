@@ -85,6 +85,91 @@ function displayForecast(response) {
         )}º</strong>${Math.round(forecast.main.temp_min)}º</div>
     </div>
     `;
+
+  forecast = response.data.list[1];
+  console.log(forecast);
+
+  forecastElement.innerHTML += `
+    <div class="col-2">
+        <h4>
+            ${formatHours(forecast.dt * 1000)}
+        </h4>
+        <img src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        <div class="weather-forecast-temperature"><strong>${Math.round(
+          forecast.main.temp_max
+        )}º</strong>${Math.round(forecast.main.temp_min)}º</div>
+    </div>
+    `;
+
+  forecast = response.data.list[2];
+  console.log(forecast);
+
+  forecastElement.innerHTML += `
+    <div class="col-2">
+        <h4>
+            ${formatHours(forecast.dt * 1000)}
+        </h4>
+        <img src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        <div class="weather-forecast-temperature"><strong>${Math.round(
+          forecast.main.temp_max
+        )}º</strong>${Math.round(forecast.main.temp_min)}º</div>
+    </div>
+    `;
+
+  forecast = response.data.list[3];
+  console.log(forecast);
+
+  forecastElement.innerHTML += `
+    <div class="col-2">
+        <h4>
+            ${formatHours(forecast.dt * 1000)}
+        </h4>
+        <img src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        <div class="weather-forecast-temperature"><strong>${Math.round(
+          forecast.main.temp_max
+        )}º</strong>${Math.round(forecast.main.temp_min)}º</div>
+    </div>
+    `;
+
+  forecast = response.data.list[4];
+  console.log(forecast);
+
+  forecastElement.innerHTML += `
+    <div class="col-2">
+        <h4>
+            ${formatHours(forecast.dt * 1000)}
+        </h4>
+        <img src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        <div class="weather-forecast-temperature"><strong>${Math.round(
+          forecast.main.temp_max
+        )}º</strong>${Math.round(forecast.main.temp_min)}º</div>
+    </div>
+    `;
+
+  forecast = response.data.list[5];
+  console.log(forecast);
+
+  forecastElement.innerHTML += `
+    <div class="col-2">
+        <h4>
+            ${formatHours(forecast.dt * 1000)}
+        </h4>
+        <img src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+        <div class="weather-forecast-temperature"><strong>${Math.round(
+          forecast.main.temp_max
+        )}º</strong>${Math.round(forecast.main.temp_min)}º</div>
+    </div>
+    `;
 }
 
 function search(city) {
