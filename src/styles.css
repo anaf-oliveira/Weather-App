@@ -125,13 +125,6 @@ li:first-letter {
   margin-top: 10px;
 }
 
-#country {
-  font-size: 20px;
-  font-weight: 200px;
-  font-style: italic;
-  color: #ffffff;
-}
-
 #temperature {
   font-size: 40px;
   font-weight: bold;
