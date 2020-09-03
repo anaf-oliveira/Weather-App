@@ -27,8 +27,8 @@
                 <label class="sr-only" for="inlineFormInputName2">City name</label>
                 <input type="text" class="form-control mb-2 mr-sm-2" id="city-search"
                     placeholder="Please, type a city name.">
-                    <a href="#" class="btn btn-primary" id="current-button">Current</a>
-                    <a href="#" class="btn btn-primary" id="search-button">Search</a>
+                    <button type="submit" class="btn btn-primary mb-2" id="current-button">Current</button>
+                    <button type="submit" class="btn btn-primary mb-2" id="search-button">Search</button>
             </form>
         </div>
     </div>
@@ -89,26 +89,29 @@
         <div class="col-md-4">
             <div id="current-weather-description">
             <h4 class="today-title">Today</h4>
-            <img src="/media/dom.png" alt="sunny" max width="50" />
-            <h2 class="city-name">Porto</h2>
-            <p id="country-name">Portugal</p>
-            <p id="temperature"><strong>25º</strong></p><a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a><p></p>
+            <h2 id="city"></h2>
+            <span id="country">Portugal</span>
+            <div class="clearfix weather-overview">
+            <img src="media/sunny.png" alt="sunny" class="float-left"/>
+            <div class="float-left"></div>
+            <span id="temperature"></span><span class="units"><a href="#" id="buttonCelsius">ºC</a> | <a href="#" id="buttonFahren">ºF</a></span><p></p>
+            </div>
+            </div>
             <p></p><span id="last-updated">Last updated - </span><span id="today"> 1 september 2020</span></p>
             <p></p>
-            <span class="extra-info">What's to know?</span></p>
+            <span class="extra-info">Weather overview</span>
             <ul>
                 <li>
-                    <span class="specifics-values" id="min-temp">↓18º</span> <span class="specifics-values"
-                        id="max-temp">↑25º</span>
+                    <span class="specifics-values"><strong>Feels like </strong> </span><span class="specifics-values" id="feelslike"> </span><span class="specifics-values" id="feelslike">º</span>
                 </li>
                 <li>
                     <span class="specifics-values" id="description">Partly cloudy</span>
                 </li>
                 <li>
-                    <span class="specifics-values">Humidity -</span><span class="specifics-values" id="humidity"> 71%</span>
+                    <span class="specifics-values"><strong>Humidity  - </strong></span><span class="specifics-values" id="humidity"> </span><span class="specifics-values" id="humidity">%</span>
                 </li>
                 <li>
-                    <span class="specifics-values"> Wind -</span><span class="specifics-values" id="wind"> 13km/h</span>
+                    <span class="specifics-values"><strong>Wind - </strong></span><span class="specifics-values" id="wind"> </span><span class="specifics-values" id="wind">km/h</span>
                 </li>
             </ul>
 </div>
@@ -117,10 +120,10 @@
 
 <!-- /. wrap-up -->
 </div>
-</div>
 <footer>
     <small class="copyright">Open source code by <strong>Ana F. Oliveira</strong></small>
 </footer>
+</div>
 </div>
 </div>
 
