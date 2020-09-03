@@ -53,9 +53,16 @@ function currentWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "fdfe8350c0dbed11edb7a6fc3233a5d7";
-let city = "Porto";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "fdfe8350c0dbed11edb7a6fc3233a5d7";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(currentWeather);
+}
+function displaySubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
 
-console.log(apiUrl);
-axios.get(apiUrl).then(currentWeather);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", displaySubmit);
