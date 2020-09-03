@@ -126,6 +126,7 @@ li:first-letter {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 #country {
@@ -138,8 +139,8 @@ li:first-letter {
 #temperature {
   font-size: 40px;
   font-weight: bold;
-  margin-top: 10px;
   color: #ffffff;
+  line-height: 100px;
 }
 
 #button-fahren {
@@ -160,7 +161,7 @@ li:first-letter {
   color: #ffffff;
 }
 
-#today {
+#date {
   font-size: 10px;
   color: #ffffff;
 }
@@ -209,14 +210,18 @@ li:first-letter {
   font-weight: bold;
 }
 
-.weather-overview img {
+/* .weather-overview img {
   margin-right: 10px;
   max-width: 80px;
-}
+} */
 
 .weather-overview .units {
   position: relative;
   font-size: 16px;
   top: -16px;
   margin-left: 10px;
+}
+
+.col-md-7 {
+  text-align: center;
 }
