@@ -8,6 +8,7 @@
   z-index: 9;
   background: #056676;
   max-width: 900px;
+  height: 500px;
   border-radius: 25px 20px 20px 25px;
   padding: 20px 20px 20px 20px;
   margin: 30px auto;
@@ -159,7 +160,8 @@ li:first-letter {
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 20px;
+  margin-top: -20px;
 }
 
 .forecast-title {
@@ -199,10 +201,10 @@ li:first-letter {
   font-weight: bold;
 }
 
-/* .weather-overview img {
-  margin-right: 10px;
-  max-width: 80px;
-} */
+.weather-overview img {
+  max-width: 100px;
+  margin-top: -21px;
+}
 
 .weather-overview .units {
   position: relative;
@@ -226,7 +228,7 @@ li:first-letter {
 
 .weather-forecast h4 {
   color: rgb(186, 186, 186);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
   height: 15px;
@@ -244,7 +246,7 @@ li:first-letter {
 .weather-forecast-temperature {
   text-align: center;
   color: rgb(135, 135, 135);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   height: auto;
   white-space: nowrap;
