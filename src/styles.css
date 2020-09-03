@@ -118,7 +118,7 @@ li:first-letter {
 }
 
 #city {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
@@ -211,6 +211,11 @@ li:first-letter {
   margin-left: 10px;
 }
 
-.col-md-7 {
-  text-align: center;
+.weather-overview .active {
+  color: #ffffff;
+  cursor: default;
+}
+
+.weather-overview .active:hover {
+  text-decoration: none;
 }

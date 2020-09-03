@@ -26,24 +26,27 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-// Current weather
+// Weather search
 
 function currentWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.name;
   let feelsLikeElement = document.querySelector("#feelslike");
-  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   let descriptionElement = document.querySelector("#description");
-  descriptionElement.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
-  windElement.innerHTML = Math.round(response.data.wind.speed);
   let dateElement = document.querySelector("#date");
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
+
+  celsiusTemp = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+  cityElement.innerHTML = response.data.name;
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -62,8 +65,7 @@ function displaySubmit(event) {
   search(cityInputElement.value);
 }
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", displaySubmit);
+// Current Location
 
 function handlePosition() {
   navigator.geolocation.getCurrentPosition(currentLocation);
@@ -98,3 +100,35 @@ function giveLocation(response) {
 }
 let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", handlePosition);
+
+// Celsius to Fahrenheit
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", displaySubmit);
+
+let fahrenheitLink = document.querySelector("#buttonFahren");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let celsiusLink = document.querySelector("#buttonCelsius");
+celsiusLink.addEventListener("click", convertToCelsius);
+
+search("Vila Nova de Gaia");
