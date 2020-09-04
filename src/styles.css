@@ -6,9 +6,21 @@
 .app {
   position: relative;
   z-index: 9;
-  background: #056676;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   max-width: 900px;
   height: 500px;
+  border: 100px;
+  border-color: rgb(135, 135, 135);
   border-radius: 25px 20px 20px 25px;
   padding: 20px 20px 20px 20px;
   margin: 30px auto;
@@ -23,16 +35,17 @@
   right: 40%;
   bottom: 0;
   left: 0;
-  background: #f6f5f5;
+  background: #ffffff;
   border-radius: 20px 0px 0px 20px;
 }
 
 .title {
   font-size: 30px;
   font-weight: 700;
-  color: #056676;
+  color: #5642d0;
   padding-top: 20px;
   padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 #search-form {
@@ -43,56 +56,54 @@
   margin-left: 5px;
   padding-right: 10px;
   width: 100px;
-  background-color: #5eaaa8;
+  background-color: #6351da;
   border: none;
   color: #ffffff;
 }
 
 #search-button:hover {
   background-color: #ffffff;
-  border: 1px solid #5eaaa8;
-  color: #5eaaa8;
+  border: 1px solid #6351da;
+  color: #6351da;
 }
 
 #current-button {
   margin-left: 10px;
   padding-right: 10px;
   width: 100px;
-  background-color: #5eaaa8;
+  background-color: #6351da;
   border: none;
   color: #ffffff;
 }
 
 #current-button:hover {
   background-color: #ffffff;
-  border: 1px solid #5eaaa8;
-  color: #5eaaa8;
+  border: 1px solid #6351da;
+  color: #6351da;
 }
 
 .left-title {
-  font-size: 25px;
+  font-size: 22px;
+  line-height: 62px;
+  margin-top: -24px;
   font-weight: 700;
-  color: #5eaaa8;
+  color: #6f5ee4;
   padding-top: 10px;
 }
 
-.row1 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 12px;
+#forecast {
+  background-color: #f9f9f9;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 1px;
 }
 
-.weekday {
-  font-size: 14px;
-  font-weight: normal;
-}
-
-table {
-  text-align: center;
-}
-td {
-  font-size: 14px;
-  font-weight: normal;
+#forecast:hover {
+  background-color: #f2f2f2;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 1px;
+  cursor: pointer;
 }
 
 ul {
@@ -114,16 +125,28 @@ li:first-letter {
 
 .today-title {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
 }
 
 #city {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 10px;
+}
+
+#last-updated {
+  font-size: 10px;
+  font-weight: 700px;
+  color: #ffffff;
+}
+
+#date {
+  font-size: 10px;
+  font-weight: 100px;
+  color: #ffffff;
 }
 
 #temperature {
@@ -131,29 +154,6 @@ li:first-letter {
   font-weight: bold;
   color: #ffffff;
   line-height: 100px;
-}
-
-#button-fahren {
-  font-size: 15px;
-  font-weight: 200px;
-  color: #ffffff;
-}
-
-#button-celsius {
-  font-size: 15px;
-  font-weight: 200px;
-  color: #ffffff;
-}
-
-#last-updated {
-  font-size: 10px;
-  font-weight: 100px;
-  color: #ffffff;
-}
-
-#date {
-  font-size: 10px;
-  color: #ffffff;
 }
 
 .extra-info {
@@ -187,6 +187,10 @@ li:first-letter {
   color: #ffffff;
   font-size: 13px;
   line-height: 9px;
+}
+
+#description {
+  text-transform: capitalize;
 }
 
 #min-temp {
@@ -223,7 +227,7 @@ li:first-letter {
 }
 
 .weather-forecast {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .weather-forecast h4 {

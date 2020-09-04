@@ -34,11 +34,9 @@
     </div>
     <div class="row">
         <!-- /. left collumn -->
-        <div class="col-md-7">
-        <p></p>
-        <p></p>
-            <h3 class="left-title">What to expect in the next hours</h3>
+        <div class="col-md-7 text-justify-left"> 
         </br>
+            <h3 class="left-title">What to expect for the next 12 hours</h3>
 <div class="row weather-forecast" id="forecast"> 
 </div>
 </div>
@@ -50,7 +48,7 @@
             <h4 class="today-title">Today</h4>
             <h2 id="city"></h2>
         <span id="last-updated">Last updated:</span> <span id="date"> </span>
-            <div class="clearfix weather-overview justify-content-center">
+            <div class="clearfix weather-overview">
             <img src="" alt="sunny"  id="icon"/>
             <span id="temperature"></span><span class="units"><a href="#" id="buttonCelsius" class="active">ºC</a> | <a href="#" id="buttonFahren">ºF</a></span><p></p>
             </div>
@@ -58,16 +56,12 @@
             <span class="extra-info">Weather overview</span>
             <ul>
                 <li>
-                    <span class="specifics-values"><strong>Feels like - </strong> </span><span class="specifics-values" id="feelslike"> </span><span class="specifics-values" id="feelslike">º</span>
+                    <span class="specifics-values"><strong>Feels like - </strong> </span><span class="specifics-values" id="feelslike"> </span><span class="specifics-values" id="feelslike">º</span> | <span class="specifics-values"><strong>Looks like - </strong> <span class="specifics-values" id="description">
+                        </span></span>
                 </li>
                 <li>
-                    <span class="specifics-values" id="description"> </span>
-                </li>
-                <li>
-                    <span class="specifics-values"><strong>Humidity  - </strong></span><span class="specifics-values" id="humidity"> </span><span class="specifics-values" id="humidity">%</span>
-                </li>
-                <li>
-                    <span class="specifics-values"><strong>Wind - </strong></span><span class="specifics-values" id="wind"> </span><span class="specifics-values" id="wind">km/h</span>
+                    <span class="specifics-values"><strong>Humidity  - </strong></span><span class="specifics-values" id="humidity"> </span><span class="specifics-values" id="humidity">%</span> | <span class="specifics-values"><strong>Wind - </strong></span><span class="specifics-values" id="wind"> </span><span
+                    class="specifics-values" id="wind">km/h</span>
                 </li>
             </ul>
 </div>
@@ -77,7 +71,7 @@
 <!-- /. wrap-up -->
 </div>
 <footer>
-    <small class="copyright">Open source code by <strong>Ana F. Oliveira</strong></small>
+    <small class="copyright">Open source code by <strong>Ana F. Oliveira</strong> @ <a href="https://github.com/anaf-oliveira/Weather-App" target="_blank">GitHub</a></small>
 </footer>
 </div>
 </div>
