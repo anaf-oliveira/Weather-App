@@ -108,6 +108,10 @@
   box-shadow: 10px 10px 19px -20px rgba(0, 0, 0, 0.75);
 }
 
+#current-weather-description {
+  margin-left: 17px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -159,6 +163,10 @@ li:first-letter {
 }
 
 .extra-info {
+  margin-left: 18px;
+}
+
+.extrainfo {
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
