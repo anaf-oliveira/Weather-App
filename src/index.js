@@ -120,6 +120,9 @@ function currentLocation(position) {
       `${geoLocation}lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`
     )
     .then(giveLocation);
+
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function giveLocation(response) {
